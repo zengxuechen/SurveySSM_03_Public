@@ -11,9 +11,9 @@ public class TbCustTestResult implements Serializable{
 	//列信息
 	private Integer id;
 	
-	private String testTypeCode;
+	private String testUserId;
 	
-	private String testTypeName;
+	private String testTypeId;
 	
 	private String testResult;
 	
@@ -28,21 +28,21 @@ public class TbCustTestResult implements Serializable{
 	}
 		
 		
-	public void setTestTypeCode(String value) {
-		this.testTypeCode = value;
+	public void setTestUserId(String value) {
+		this.testUserId = value;
 	}
 	
-	public String getTestTypeCode() {
-		return this.testTypeCode;
+	public String getTestUserId() {
+		return this.testUserId;
 	}
 		
 		
-	public void setTestTypeName(String value) {
-		this.testTypeName = value;
+	public void setTestTypeId(String value) {
+		this.testTypeId = value;
 	}
 	
-	public String getTestTypeName() {
-		return this.testTypeName;
+	public String getTestTypeId() {
+		return this.testTypeId;
 	}
 		
 		
