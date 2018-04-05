@@ -21,9 +21,9 @@ public class TbSelectQuestionLib implements Serializable{
 	
 	private String questionContent;
 	
-	private String option;
+	private String options;
 	
-	private String optionBitmap;
+	private String optionsBitmap;
 	
 
 		
@@ -81,21 +81,21 @@ public class TbSelectQuestionLib implements Serializable{
 	}
 		
 		
-	public void setOption(String value) {
-		this.option = value;
+	public void setOptions(String value) {
+		this.options = value;
 	}
 	
-	public String getOption() {
-		return this.option;
+	public String getOptions() {
+		return this.options;
 	}
 		
 		
-	public void setOptionBitmap(String value) {
-		this.optionBitmap = value;
+	public void setOptionsBitmap(String value) {
+		this.optionsBitmap = value;
 	}
 	
-	public String getOptionBitmap() {
-		return this.optionBitmap;
+	public String getOptionsBitmap() {
+		return this.optionsBitmap;
 	}
 		
 }
