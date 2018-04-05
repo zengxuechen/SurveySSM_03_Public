@@ -17,6 +17,12 @@ public class TbCustomerRelation implements Serializable{
 	
 	private Integer positionId;
 	
+	private String phone;
+	
+	private String email;
+	
+	private String userNameCn;
+	
 
 		
 	public void setId(Integer value) {
@@ -52,6 +58,33 @@ public class TbCustomerRelation implements Serializable{
 	
 	public Integer getPositionId() {
 		return this.positionId;
+	}
+		
+		
+	public void setPhone(String value) {
+		this.phone = value;
+	}
+	
+	public String getPhone() {
+		return this.phone;
+	}
+		
+		
+	public void setEmail(String value) {
+		this.email = value;
+	}
+	
+	public String getEmail() {
+		return this.email;
+	}
+		
+		
+	public void setUserNameCn(String value) {
+		this.userNameCn = value;
+	}
+	
+	public String getUserNameCn() {
+		return this.userNameCn;
 	}
 		
 }
