@@ -2,13 +2,15 @@ package com.atguigu.survey.vo;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * Using IntelliJ IDEA.
  *
  * @author 李小鑫 at 2018/4/5 15:33
  */
 @Data
-public class CustomerRelationInfoVo {
+public class CustomerRelationInfoVo implements Serializable{
 
     /**
      * 用户名

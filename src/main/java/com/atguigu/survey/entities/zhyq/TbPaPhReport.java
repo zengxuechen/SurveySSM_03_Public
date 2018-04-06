@@ -1,11 +1,15 @@
 package com.atguigu.survey.entities.zhyq;
 
+import lombok.Data;
+
 import java.io.Serializable;
+import java.math.BigDecimal;
 
 
 /**
  * TbPaPhReport Entity.
  */
+@Data
 public class TbPaPhReport implements Serializable{
 	
 	//列信息
@@ -15,77 +19,13 @@ public class TbPaPhReport implements Serializable{
 	
 	private String symptomTypeName;
 	
-	private Double standardValueBgn;
+	private BigDecimal standardValueBgn;
 	
-	private Double standardValueEnd;
+	private BigDecimal standardValueEnd;
 	
 	private String symptomDesc;
 	
 	private Integer standardMode;
-	
-
-		
-	public void setId(Integer value) {
-		this.id = value;
-	}
-	
-	public Integer getId() {
-		return this.id;
-	}
-		
-		
-	public void setSymptomTypeCode(String value) {
-		this.symptomTypeCode = value;
-	}
-	
-	public String getSymptomTypeCode() {
-		return this.symptomTypeCode;
-	}
-		
-		
-	public void setSymptomTypeName(String value) {
-		this.symptomTypeName = value;
-	}
-	
-	public String getSymptomTypeName() {
-		return this.symptomTypeName;
-	}
-		
-		
-	public void setStandardValueBgn(Double value) {
-		this.standardValueBgn = value;
-	}
-	
-	public Double getStandardValueBgn() {
-		return this.standardValueBgn;
-	}
-		
-		
-	public void setStandardValueEnd(Double value) {
-		this.standardValueEnd = value;
-	}
-	
-	public Double getStandardValueEnd() {
-		return this.standardValueEnd;
-	}
-		
-		
-	public void setSymptomDesc(String value) {
-		this.symptomDesc = value;
-	}
-	
-	public String getSymptomDesc() {
-		return this.symptomDesc;
-	}
-		
-		
-	public void setStandardMode(Integer value) {
-		this.standardMode = value;
-	}
-	
-	public Integer getStandardMode() {
-		return this.standardMode;
-	}
 		
 }
 
