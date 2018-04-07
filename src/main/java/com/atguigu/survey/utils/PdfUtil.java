@@ -570,7 +570,7 @@ public class PdfUtil {
     	 		"					<td>生活型LS</td>\r\n" + 
     	 		"				</tr>\r\n" + 
     	 		"				<tr>\r\n" + 
-    	 		"					<td></td><td></td><td></td><td></td><td></td><td></td><td>${star}</td><td></td>\r\n" + 
+    	 		"					<td>${star1}</td><td>${star2}</td><td>${star3}</td><td>${star4}</td><td>${star5}</td><td>${star6}</td><td>${star7}</td><td>${star8}</td>\r\n" +
     	 		"				</tr>\r\n" + 
     	 		"				<tr>\r\n" + 
     	 		"					<td>特点概述</td>\r\n" + 
