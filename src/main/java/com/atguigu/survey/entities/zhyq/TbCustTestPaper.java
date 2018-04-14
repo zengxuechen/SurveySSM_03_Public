@@ -21,7 +21,7 @@ public class TbCustTestPaper implements Serializable{
 	
 	private String questionIds;
 	
-	private Integer creatorId;
+	private String creatorId;
 	
 
 		
@@ -79,11 +79,11 @@ public class TbCustTestPaper implements Serializable{
 	}
 		
 		
-	public void setCreatorId(Integer value) {
+	public void setCreatorId(String value) {
 		this.creatorId = value;
 	}
 	
-	public Integer getCreatorId() {
+	public String getCreatorId() {
 		return this.creatorId;
 	}
 		
