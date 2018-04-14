@@ -11,13 +11,13 @@ public class TbPaEcReport implements Serializable{
 	//列信息
 	private Integer id;
 	
-	private String eqSectionCode;
-	
 	private Integer standardValueBgn;
 	
 	private Integer standardValueEnd;
 	
 	private String sectionDesc;
+	
+	private String developmentAdvice;
 	
 
 		
@@ -27,15 +27,6 @@ public class TbPaEcReport implements Serializable{
 	
 	public Integer getId() {
 		return this.id;
-	}
-		
-		
-	public void setEqSectionCode(String value) {
-		this.eqSectionCode = value;
-	}
-	
-	public String getEqSectionCode() {
-		return this.eqSectionCode;
 	}
 		
 		
@@ -63,6 +54,15 @@ public class TbPaEcReport implements Serializable{
 	
 	public String getSectionDesc() {
 		return this.sectionDesc;
+	}
+		
+		
+	public void setDevelopmentAdvice(String value) {
+		this.developmentAdvice = value;
+	}
+	
+	public String getDevelopmentAdvice() {
+		return this.developmentAdvice;
 	}
 		
 }

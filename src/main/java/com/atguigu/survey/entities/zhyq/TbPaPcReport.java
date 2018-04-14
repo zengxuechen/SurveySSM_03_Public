@@ -23,6 +23,8 @@ public class TbPaPcReport implements Serializable{
 	
 	private String suitedCareer;
 	
+	private String developmentAdvice;
+	
 
 		
 	public void setId(Integer value) {
@@ -85,6 +87,15 @@ public class TbPaPcReport implements Serializable{
 	
 	public String getSuitedCareer() {
 		return this.suitedCareer;
+	}
+		
+		
+	public void setDevelopmentAdvice(String value) {
+		this.developmentAdvice = value;
+	}
+	
+	public String getDevelopmentAdvice() {
+		return this.developmentAdvice;
 	}
 		
 }

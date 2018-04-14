@@ -19,6 +19,8 @@ public class TbPaCaReport implements Serializable{
 	
 	private String characterDesc;
 	
+	private String developmentAdvice;
+	
 
 		
 	public void setId(Integer value) {
@@ -63,6 +65,15 @@ public class TbPaCaReport implements Serializable{
 	
 	public String getCharacterDesc() {
 		return this.characterDesc;
+	}
+		
+		
+	public void setDevelopmentAdvice(String value) {
+		this.developmentAdvice = value;
+	}
+	
+	public String getDevelopmentAdvice() {
+		return this.developmentAdvice;
 	}
 		
 }
