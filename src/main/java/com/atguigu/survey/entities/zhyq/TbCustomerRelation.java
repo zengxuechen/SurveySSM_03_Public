@@ -23,6 +23,10 @@ public class TbCustomerRelation implements Serializable{
 	
 	private String userNameCn;
 	
+	private String testPaperIds;
+	
+	private java.util.Date createTime;
+	
 
 		
 	public void setId(Integer value) {
@@ -85,6 +89,24 @@ public class TbCustomerRelation implements Serializable{
 	
 	public String getUserNameCn() {
 		return this.userNameCn;
+	}
+		
+		
+	public void setTestPaperIds(String value) {
+		this.testPaperIds = value;
+	}
+	
+	public String getTestPaperIds() {
+		return this.testPaperIds;
+	}
+		
+		
+	public void setCreateTime(java.util.Date value) {
+		this.createTime = value;
+	}
+	
+	public java.util.Date getCreateTime() {
+		return this.createTime;
 	}
 		
 }
