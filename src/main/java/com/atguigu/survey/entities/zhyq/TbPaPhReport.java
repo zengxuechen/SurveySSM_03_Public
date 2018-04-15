@@ -26,6 +26,10 @@ public class TbPaPhReport implements Serializable{
 	private String symptomDesc;
 	
 	private Integer standardMode;
-		
+	
+	private String developmentAdvice;
+	
+
+
 }
 

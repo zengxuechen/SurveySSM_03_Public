@@ -13,6 +13,11 @@ import java.io.Serializable;
 public class CustomerDetailVo implements Serializable {
 
     /**
+     * 用户Id
+     */
+    private String userId;
+
+    /**
      * 用户名称
      */
     private String userName;
