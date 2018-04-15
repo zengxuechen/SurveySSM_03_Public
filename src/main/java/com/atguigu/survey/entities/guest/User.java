@@ -13,7 +13,11 @@ import com.atguigu.survey.entities.manager.Role;
  */
 public class User implements Serializable{
 
-	private static final long serialVersionUID = 1L;
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -46281696827991510L;
 
 	private Integer userId; //用户id
 
