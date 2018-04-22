@@ -2,12 +2,20 @@ package com.atguigu.survey.entities.zhyq;
 
 import java.io.Serializable;
 
+import lombok.Data;
+
 
 /**
  * TbCustTestResult Entity.
  */
+@Data
 public class TbCustTestResult implements Serializable{
 	
+	/**
+	 * serialVersionUID
+	 */
+	private static final long serialVersionUID = 627749161878467700L;
+
 	//列信息
 	private Integer id;
 	
@@ -17,42 +25,7 @@ public class TbCustTestResult implements Serializable{
 	
 	private String testResult;
 	
-
-		
-	public void setId(Integer value) {
-		this.id = value;
-	}
+	private String testPaperId;
 	
-	public Integer getId() {
-		return this.id;
-	}
-		
-		
-	public void setTestUserId(String value) {
-		this.testUserId = value;
-	}
-	
-	public String getTestUserId() {
-		return this.testUserId;
-	}
-		
-		
-	public void setTestTypeId(String value) {
-		this.testTypeId = value;
-	}
-	
-	public String getTestTypeId() {
-		return this.testTypeId;
-	}
-		
-		
-	public void setTestResult(String value) {
-		this.testResult = value;
-	}
-	
-	public String getTestResult() {
-		return this.testResult;
-	}
-		
 }
 

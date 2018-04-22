@@ -13,6 +13,11 @@ import java.io.Serializable;
 public class CustomerDetailVo implements Serializable {
 
     /**
+	 * serialVersionUID
+	 */
+	private static final long serialVersionUID = -9211295404124166572L;
+
+	/**
      * 用户Id
      */
     private String userId;
@@ -41,6 +46,11 @@ public class CustomerDetailVo implements Serializable {
      * 职位名称
      */
     private String positionName;
+    
+    /**
+     * 公司LOGO
+     */
+    private String companyLogo;
 
 
 }

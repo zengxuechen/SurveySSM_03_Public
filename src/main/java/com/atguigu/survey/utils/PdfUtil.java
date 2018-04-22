@@ -16,27 +16,29 @@ import com.itextpdf.text.pdf.BaseFont;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.tool.xml.XMLWorkerHelper;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class PdfUtil {
 
+	private PdfUtil() {
+	}
     
     /**
      * 根据传入的PDF模板文件內容生成相应的PDF临时文件
      * @param filename
      */
-    public static void createTempPdf(String content) {
+    public static void createTempPdf(String content, String fileName) {
     	try {  
     	Document document = new Document();  
-    	PdfWriter mPdfWriter = PdfWriter. getInstance(document, new FileOutputStream("D:\\fff222.pdf"));  
+    	PdfWriter mPdfWriter = PdfWriter. getInstance(document, new FileOutputStream(fileName));  
     	document.open();  
     	ByteArrayInputStream bin = new ByteArrayInputStream(content.getBytes());  
     	   XMLWorkerHelper.getInstance().parseXHtml(mPdfWriter, document, bin, null,new ChinaFontProvide());  
     	document.close();
     	} catch (FileNotFoundException e) {  
-    	e.printStackTrace();  
     	} catch (DocumentException e) {  
-    	e.printStackTrace();  
-    	}catch (Exception e) {  
-    	e.printStackTrace();  
+    	} catch (Exception e) {  
     	}  
     	}  
     	  
@@ -54,10 +56,8 @@ public class PdfUtil {
     	     try {  
     	       bfChinese=BaseFont.createFont("STSong-Light", "UniGB-UCS2-H", BaseFont.NOT_EMBEDDED);  
     	     } catch (Exception e) {  
-    	       e.printStackTrace();  
     	     }  
-    	     Font FontChinese = new Font(bfChinese, 12, Font.NORMAL);  
-    	     return FontChinese;  
+    	     return new Font(bfChinese, 12, Font.NORMAL);  
     	   }  
     	  
     	  
@@ -71,20 +71,17 @@ public class PdfUtil {
             File file = new File(fileName);  
             Long filelength = file.length();  
             byte[] filecontent = new byte[filelength.intValue()];  
-            try {  
+            try {
                 FileInputStream in = new FileInputStream(file);  
                 in.read(filecontent);  
                 in.close();  
             } catch (FileNotFoundException e) {  
-                e.printStackTrace();  
             } catch (IOException e) {  
-                e.printStackTrace();  
             }  
             try {  
                 return new String(filecontent, encoding);  
             } catch (UnsupportedEncodingException e) {  
-                System.err.println("The OS does not support " + encoding);  
-                e.printStackTrace();  
+                log.info("The OS does not support " + encoding);  
                 return null;  
             }  
         }  	

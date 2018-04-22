@@ -8,6 +8,11 @@ import java.io.Serializable;
  */
 public class TbPaPcReport implements Serializable{
 	
+	/**
+	 * serialVersionUID
+	 */
+	private static final long serialVersionUID = 3323592171533554572L;
+
 	//列信息
 	private Integer id;
 	
