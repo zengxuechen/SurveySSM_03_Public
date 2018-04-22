@@ -28,7 +28,7 @@ public class PdfUtil {
      * 根据传入的PDF模板文件內容生成相应的PDF临时文件
      * @param filename
      */
-    public static void createTempPdf(String content, String fileName) {
+    public static boolean createTempPdf(String content, String fileName) {
     	try {  
     	Document document = new Document();  
     	PdfWriter mPdfWriter = PdfWriter. getInstance(document, new FileOutputStream(fileName));  
@@ -40,6 +40,7 @@ public class PdfUtil {
     	} catch (DocumentException e) {  
     	} catch (Exception e) {  
     	}  
+    	return true;
     	}  
     	  
     	public static String getHtml(String fileName){
