@@ -25,7 +25,7 @@ public class TbCustFunctionLevelMap implements Serializable{
 	
 	private String upFunctionName;
 	
-	private Integer standardUpId;
+	private Integer standardId;
 	
 
 		
@@ -101,12 +101,12 @@ public class TbCustFunctionLevelMap implements Serializable{
 	}
 		
 		
-	public void setStandardUpId(Integer value) {
-		this.standardUpId = value;
+	public void setStandardId(Integer value) {
+		this.standardId = value;
 	}
 	
-	public Integer getStandardUpId() {
-		return this.standardUpId;
+	public Integer getStandardId() {
+		return this.standardId;
 	}
 		
 }
