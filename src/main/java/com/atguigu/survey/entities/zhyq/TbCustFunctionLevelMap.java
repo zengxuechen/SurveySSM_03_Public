@@ -9,8 +9,6 @@ import java.io.Serializable;
 public class TbCustFunctionLevelMap implements Serializable{
 	
 	//列信息
-	private Integer id;
-	
 	private Integer departmentId;
 	
 	private Integer functionId;
@@ -26,17 +24,6 @@ public class TbCustFunctionLevelMap implements Serializable{
 	private String upFunctionName;
 	
 	private Integer standardId;
-	
-
-		
-	public void setId(Integer value) {
-		this.id = value;
-	}
-	
-	public Integer getId() {
-		return this.id;
-	}
-		
 		
 	public void setDepartmentId(Integer value) {
 		this.departmentId = value;
