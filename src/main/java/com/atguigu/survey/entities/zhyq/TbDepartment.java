@@ -15,6 +15,8 @@ public class TbDepartment implements Serializable{
 	
 	private String departmentName;
 	
+	private String departmentId;
+	
 
 		
 	public void setId(Integer value) {
@@ -41,6 +43,14 @@ public class TbDepartment implements Serializable{
 	
 	public String getDepartmentName() {
 		return this.departmentName;
+	}
+
+	public String getDepartmentId() {
+		return departmentId;
+	}
+
+	public void setDepartmentId(String departmentId) {
+		this.departmentId = departmentId;
 	}
 		
 }
