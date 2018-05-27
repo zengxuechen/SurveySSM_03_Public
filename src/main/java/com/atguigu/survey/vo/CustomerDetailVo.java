@@ -26,6 +26,11 @@ public class CustomerDetailVo implements Serializable {
      * 用户名称
      */
     private String userName;
+    
+    /**
+     * 公司ID
+     */
+    private Integer companyId;
 
     /**
      * 公司名称（中文）
