@@ -10,7 +10,7 @@ public class GlobalNames {
 	//guest
 	public static final String LOGIN_USER = "loginUser";
 	public static final String PAGE = "page";
-	
+	public static final String USER_RELATION = "userRelation";
 	//参与调查
 	public static final String BAG_LIST = "bagList";
 	public static final String ALL_BAG_MAP = "allBagMap";
