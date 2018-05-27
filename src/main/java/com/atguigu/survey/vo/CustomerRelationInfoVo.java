@@ -55,5 +55,10 @@ public class CustomerRelationInfoVo implements Serializable{
      * 电话
      */
     private String phone;
+    
+    /**
+     * 公司
+     */
+    private boolean company;
 
 }
