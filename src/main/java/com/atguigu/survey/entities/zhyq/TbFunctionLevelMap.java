@@ -17,9 +17,11 @@ public class TbFunctionLevelMap implements Serializable{
 	
 	private String functionLevel;
 	
-	private Integer upId;
+	private String upId;
 	
 	private String upFunctionName;
+	
+	private String functionId;
 	
 
 		
@@ -59,11 +61,11 @@ public class TbFunctionLevelMap implements Serializable{
 	}
 		
 		
-	public void setUpId(Integer value) {
+	public void setUpId(String value) {
 		this.upId = value;
 	}
 	
-	public Integer getUpId() {
+	public String getUpId() {
 		return this.upId;
 	}
 		
@@ -74,6 +76,15 @@ public class TbFunctionLevelMap implements Serializable{
 	
 	public String getUpFunctionName() {
 		return this.upFunctionName;
+	}
+		
+		
+	public void setFunctionId(String value) {
+		this.functionId = value;
+	}
+	
+	public String getFunctionId() {
+		return this.functionId;
 	}
 		
 }

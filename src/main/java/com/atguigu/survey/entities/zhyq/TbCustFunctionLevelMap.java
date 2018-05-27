@@ -9,9 +9,11 @@ import java.io.Serializable;
 public class TbCustFunctionLevelMap implements Serializable{
 	
 	//列信息
+	private Integer id;
+	
 	private Integer departmentId;
 	
-	private Integer functionId;
+	private String functionId;
 	
 	private String functionLevel;
 	
@@ -19,11 +21,20 @@ public class TbCustFunctionLevelMap implements Serializable{
 	
 	private String functionContent;
 	
-	private Integer upId;
+	private String upId;
 	
 	private String upFunctionName;
 	
-	private Integer standardId;
+
+		
+	public void setId(Integer value) {
+		this.id = value;
+	}
+	
+	public Integer getId() {
+		return this.id;
+	}
+		
 		
 	public void setDepartmentId(Integer value) {
 		this.departmentId = value;
@@ -34,11 +45,11 @@ public class TbCustFunctionLevelMap implements Serializable{
 	}
 		
 		
-	public void setFunctionId(Integer value) {
+	public void setFunctionId(String value) {
 		this.functionId = value;
 	}
 	
-	public Integer getFunctionId() {
+	public String getFunctionId() {
 		return this.functionId;
 	}
 		
@@ -70,11 +81,11 @@ public class TbCustFunctionLevelMap implements Serializable{
 	}
 		
 		
-	public void setUpId(Integer value) {
+	public void setUpId(String value) {
 		this.upId = value;
 	}
 	
-	public Integer getUpId() {
+	public String getUpId() {
 		return this.upId;
 	}
 		
@@ -85,15 +96,6 @@ public class TbCustFunctionLevelMap implements Serializable{
 	
 	public String getUpFunctionName() {
 		return this.upFunctionName;
-	}
-		
-		
-	public void setStandardId(Integer value) {
-		this.standardId = value;
-	}
-	
-	public Integer getStandardId() {
-		return this.standardId;
 	}
 		
 }

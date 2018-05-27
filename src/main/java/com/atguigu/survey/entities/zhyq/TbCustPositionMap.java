@@ -9,37 +9,48 @@ import java.io.Serializable;
 public class TbCustPositionMap implements Serializable{
 	
 	//列信息
+	private Integer id;
+	
 	private Integer departmentId;
 	
-	private Integer positionId;
+	private String positionId;
 	
 	private String positionName;
 	
-	private Integer firstFucntionId;
+	private String firstFucntionId;
 	
 	private String firstFunctionName;
 	
 	private String firstFunctionContent;
 	
-	private Integer secondFucntionId;
+	private String secondFucntionId;
 	
 	private String secondFunctionName;
 	
 	private String secondFunctionContent;
 	
-	private Integer thirdFucntionId;
+	private String thirdFucntionId;
 	
 	private String thirdFunctionName;
 	
 	private String thirdFunctionContent;
 	
-	private Integer fourthFucntionId;
+	private String fourthFucntionId;
 	
 	private String fourthFunctionName;
 	
 	private String fourthFunctionContent;
 	
 
+		
+	public void setId(Integer value) {
+		this.id = value;
+	}
+	
+	public Integer getId() {
+		return this.id;
+	}
+		
 		
 	public void setDepartmentId(Integer value) {
 		this.departmentId = value;
@@ -50,11 +61,11 @@ public class TbCustPositionMap implements Serializable{
 	}
 		
 		
-	public void setPositionId(Integer value) {
+	public void setPositionId(String value) {
 		this.positionId = value;
 	}
 	
-	public Integer getPositionId() {
+	public String getPositionId() {
 		return this.positionId;
 	}
 		
@@ -68,11 +79,11 @@ public class TbCustPositionMap implements Serializable{
 	}
 		
 		
-	public void setFirstFucntionId(Integer value) {
+	public void setFirstFucntionId(String value) {
 		this.firstFucntionId = value;
 	}
 	
-	public Integer getFirstFucntionId() {
+	public String getFirstFucntionId() {
 		return this.firstFucntionId;
 	}
 		
@@ -95,11 +106,11 @@ public class TbCustPositionMap implements Serializable{
 	}
 		
 		
-	public void setSecondFucntionId(Integer value) {
+	public void setSecondFucntionId(String value) {
 		this.secondFucntionId = value;
 	}
 	
-	public Integer getSecondFucntionId() {
+	public String getSecondFucntionId() {
 		return this.secondFucntionId;
 	}
 		
@@ -122,11 +133,11 @@ public class TbCustPositionMap implements Serializable{
 	}
 		
 		
-	public void setThirdFucntionId(Integer value) {
+	public void setThirdFucntionId(String value) {
 		this.thirdFucntionId = value;
 	}
 	
-	public Integer getThirdFucntionId() {
+	public String getThirdFucntionId() {
 		return this.thirdFucntionId;
 	}
 		
@@ -149,11 +160,11 @@ public class TbCustPositionMap implements Serializable{
 	}
 		
 		
-	public void setFourthFucntionId(Integer value) {
+	public void setFourthFucntionId(String value) {
 		this.fourthFucntionId = value;
 	}
 	
-	public Integer getFourthFucntionId() {
+	public String getFourthFucntionId() {
 		return this.fourthFucntionId;
 	}
 		
