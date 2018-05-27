@@ -115,4 +115,10 @@ public class SnowflakeIdGen {
            System.out.println(id);
        }
    }
+   
+   public static String createFunctionId(String prefix) {
+	   SnowflakeIdGen snowflakeIdGen = new SnowflakeIdGen();
+	   long id = snowflakeIdGen.nextId();
+	   return prefix+id; 
+   }
 }
