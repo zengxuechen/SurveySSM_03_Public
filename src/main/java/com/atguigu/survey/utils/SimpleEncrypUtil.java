@@ -13,10 +13,11 @@ public class SimpleEncrypUtil {
 	
 	private final static int C1 = 520;
     private final static int C2 = 1314;
+    
 	 /**
      *    加密函数
       */
-    public  String Encrypt(String S, int Key) {
+    public static  String Encrypt(String S, int Key) {
 
         ByteBuffer buffer=ByteBuffer.allocate(S.length()*2);
 
@@ -50,7 +51,7 @@ public class SimpleEncrypUtil {
       */
 
 
-    public  String Decrypt(String S, int Key) {
+    public static String Decrypt(String S, int Key) {
         StringBuffer Result = new StringBuffer();
         byte[] content;
         try {
@@ -78,7 +79,7 @@ public class SimpleEncrypUtil {
 
     //char转化为byte：
 
-    public byte[] charToByte(char c) {
+    public static byte[] charToByte(char c) {
         byte[] b = new byte[2];
         b[0] = (byte) ((c & 0xFF00)>> 8);
         b[1] = (byte) (c & 0xFF);
@@ -89,12 +90,12 @@ public class SimpleEncrypUtil {
 
 
     //byte转换为char：
-    public char byteToChar(byte[] b) {
+    public static char byteToChar(byte[] b) {
         char c = (char) (((b[0] & 0xFF)<< 8) | (b[1] &0xFF));       
         return c;
     }
 
-    public  String bytesToHexString(byte[] data, int start, int end) {
+    public static  String bytesToHexString(byte[] data, int start, int end) {
         StringBuilder sb = new StringBuilder("");
         if(data == null) {
             return "";
@@ -115,7 +116,7 @@ public class SimpleEncrypUtil {
         }
     }
 
-    public  String bytesToHexString(byte[] data) {
+    public static String bytesToHexString(byte[] data) {
         return data == null?"":bytesToHexString(data, 0, data.length);
     }
 }
