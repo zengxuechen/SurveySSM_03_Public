@@ -119,4 +119,13 @@ public class SimpleEncrypUtil {
     public static String bytesToHexString(byte[] data) {
         return data == null?"":bytesToHexString(data, 0, data.length);
     }
+    
+    public static void main(String[] args) {
+		int i =333;
+		String encrypt = Encrypt(i+"",2018);
+		String decrypt = Decrypt(encrypt, 2018);
+		int parseInt = Integer.parseInt(decrypt);
+		System.out.println("加密完后："+encrypt);
+		System.out.println("解密完后："+decrypt);
+	}
 }
