@@ -10,7 +10,7 @@ import java.util.List;
 public class Page<T> {
 
 	private int pageNo ; //当前页
-	private int pageSize = 100 ; //每页数量
+	private int pageSize = 10 ; //每页数量
 	private List<T> list ; //业务数据
 	private int totalRecordNo ; //总记录
 	private int totalPageNo ; //总页
