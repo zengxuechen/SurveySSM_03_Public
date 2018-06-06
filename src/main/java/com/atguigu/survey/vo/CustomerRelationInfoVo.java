@@ -3,6 +3,9 @@ package com.atguigu.survey.vo;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.List;
+
+import com.atguigu.survey.entities.zhyq.TbCustTestPaper;
 
 /**
  * Using IntelliJ IDEA.
@@ -26,6 +29,11 @@ public class CustomerRelationInfoVo implements Serializable{
      * 用户名
      */
     private String userName;
+    
+    /**
+     * 中文用户名
+     */
+    private String userNameCn;
 
     /**
      * 密码
@@ -60,5 +68,10 @@ public class CustomerRelationInfoVo implements Serializable{
      * 公司
      */
     private boolean company;
+    
+    /**
+     * 问卷列表
+     */
+    private List<TbCustTestPaper> paperList;
 
 }
